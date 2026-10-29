@@ -14,8 +14,8 @@ task2.PrintInfo();
 
 int total = 4;
 int completed = 0;
-if (task1.IsCompleted) completed++;
-if (task2.IsCompleted) completed++;
+if (task1.IsCompletedStatus) completed++;
+if (task2.IsCompletedStatus) completed++;
 
 Console.WriteLine();
 Console.WriteLine($"{total} задач");
@@ -33,8 +33,27 @@ Console.WriteLine($"{total - completed} осталось");
 // task.PrintInfo();
 
 
-Console.WriteLine($"заголовк {task1.GetTitle()}");
-Console.WriteLine($"описание {task1.GetDescription()}");
-Console.WriteLine($"статус {task1.GetStatus()}");
-Console.WriteLine();
-task1.PrintInfo();
+// Console.WriteLine($"заголовк {task1.GetTitle()}");
+// Console.WriteLine($"описание {task1.GetDescription()}");
+// Console.WriteLine($"статус {task1.GetStatus()}");
+// Console.WriteLine();
+// task1.PrintInfo();
+
+Console.WriteLine("Проверка валидации");
+TaskItem taskkk = new TaskItem("что", "222");
+taskkk.PrintInfo();
+
+taskkk.SetTitle("");
+taskkk.SetTitle("    1");
+taskkk.SetDescription(null);
+
+
+Console.WriteLine("данные");
+taskkk.PrintInfo();
+
+Console.WriteLine("изменение");
+taskkk.SetTitle("привет");
+taskkk.SetDescription("фыовдл");
+
+Console.WriteLine("даныне");
+taskkk.PrintInfo();
