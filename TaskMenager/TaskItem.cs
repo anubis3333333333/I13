@@ -24,5 +24,10 @@ class TaskItem{
         IsCompleted = false;
         Console.WriteLine($"{Title} сброшена");
     }
-    
+
+
+    public string GetStatus(){
+        if (IsCompleted) return "+Выполнена";
+        else return "- Не выполнена";
+    }
 }

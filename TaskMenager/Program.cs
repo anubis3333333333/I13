@@ -23,3 +23,11 @@ Console.WriteLine("Изменения");
 taskA.PrintInfo();
 Console.WriteLine();
 taskB.PrintInfo();
+
+Console.WriteLine("Использование GetStatus");
+TaskItem taskC = new TaskItem("Сходить в спортзал","в 18");
+string statusBefore = taskC.GetStatus();
+Console.WriteLine($"{statusBefore}");
+taskC.Complete();
+string statusAfter = taskC.GetStatus();
+Console.WriteLine($"{statusAfter}");
