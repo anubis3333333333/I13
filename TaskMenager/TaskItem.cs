@@ -30,4 +30,15 @@ class TaskItem{
         if (IsCompleted) return "+Выполнена";
         else return "- Не выполнена";
     }
+
+    public string GetTitle(){
+        return title;
+    }
+    public string GetDescription(){
+        return description;
+    }
+    public string GetIsComplete(){
+        return IsCompleted;
+    }
+
 }

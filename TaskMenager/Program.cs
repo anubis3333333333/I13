@@ -31,3 +31,10 @@ Console.WriteLine($"{total - completed} осталось");
 // task.IsCompleted = true;
 // Console.WriteLine("после первого изменения полей");
 // task.PrintInfo();
+
+
+Console.WriteLine($"заголовк {task1.GetTitle()}");
+Console.WriteLine($"описание {task1.GetDescription()}");
+Console.WriteLine($"статус {task1.GetStatus()}");
+Console.WriteLine();
+task1.PrintInfo();
