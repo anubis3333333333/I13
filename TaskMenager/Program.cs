@@ -21,3 +21,13 @@ Console.WriteLine();
 Console.WriteLine($"{total} задач");
 Console.WriteLine($"{completed} выполнено");
 Console.WriteLine($"{total - completed} осталось");
+
+// Console.WriteLine("Проблемы открытых полей");
+// TaskItem task = new TaskItem("чтототам", "2 раза");
+// task.PrintInfo();
+// Console.WriteLine("меняет данные");
+// task.Title = "";
+// task.Description = null;
+// task.IsCompleted = true;
+// Console.WriteLine("после первого изменения полей");
+// task.PrintInfo();
