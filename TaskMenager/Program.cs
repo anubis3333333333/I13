@@ -12,3 +12,14 @@ task2.PrintInfo();
 task3.PrintInfo();
 
 task1.Reset();
+
+
+Console.WriteLine("Независимости объектов");
+TaskItem taskA = new TaskItem("Первый оюъект","A");
+TaskItem taskB = new TaskItem("Второй объект","B");
+
+taskA.Complete();
+Console.WriteLine("Изменения");
+taskA.PrintInfo();
+Console.WriteLine();
+taskB.PrintInfo();
