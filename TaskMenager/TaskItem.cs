@@ -1,12 +1,12 @@
 class TaskItem{
-    public string Title;
-    public string Description;
-    public bool IsCompleted;
+    private string Title;
+    private string Description;
+    private bool IsCompleted;
 
     public TaskItem(string title, string description){
-        Title = title;
-        Description = description;
-        IsCompleted = false;
+        this.Title = title;
+        this.Description = description;
+        this.IsCompleted = false;
     }
 
     public void PrintInfo(){
