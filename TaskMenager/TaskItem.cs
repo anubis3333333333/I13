@@ -14,4 +14,15 @@ class TaskItem{
         Console.WriteLine($"[{status}] {Title}");
         Console.WriteLine(Description);
     }
+
+    public void Complete(){
+        IsCompleted = true;
+        Console.WriteLine($"{Title} выполнена");
+    }
+
+    public void Reset(){
+        IsCompleted = false;
+        Console.WriteLine($"{Title} сброшена");
+    }
+    
 }
